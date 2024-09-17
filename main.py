@@ -1,10 +1,10 @@
 import schedule
 import time
-from get_turnstile_records import get_turnstile_records
+from get_catraca_records import get_catraca_records
 from api_integration import get_employee_activity, send_productivity_data
 
 def integrate_data():
-    registros = get_turnstile_records()
+    registros = get_catraca_records()
     if not registros:
         print("Nenhum registro encontrado.")
         return

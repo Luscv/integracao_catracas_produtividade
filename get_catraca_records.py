@@ -1,6 +1,6 @@
 from db_connection import get_db_connection
 
-def get_turnstile_records():
+def get_catraca_records():
     conn = get_db_connection()
     if not conn:
         return []
