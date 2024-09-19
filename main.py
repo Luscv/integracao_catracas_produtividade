@@ -15,10 +15,10 @@ def integrate_data():
         horario_entrada = registro[2]
         horario_saida = registro[3]
 
-        # Obter atividade do funcionário
+        
         atividade = get_employee_activity(id_funcionario)
 
-        # Preparar payload
+        
         payload = {
             "id_funcionario": id_funcionario,
             "id_catraca": id_catraca,
@@ -41,12 +41,12 @@ def job():
     integrate_data()
     print("Integração concluída.")
 
-# Agendar para rodar a cada hora
+
 schedule.every().hour.do(job)
 
 if __name__ == "__main__":
     print("Serviço de integração iniciado.")
-    job()  # Executa imediatamente na inicialização
+    job()  
     while True:
         schedule.run_pending()
         time.sleep(1)

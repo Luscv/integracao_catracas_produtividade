@@ -1,3 +1,6 @@
+#instruções de uso
+
+#inserir as informações do banco
 DB_CONFIG = {
     'host': 'seu_host',
     'port': 5432,
@@ -6,9 +9,9 @@ DB_CONFIG = {
     'password': 'sua_senha'
 }
 
-# Configurações da API do sistema web de produtividade
+
 API_CONFIG = {
-    'base_url': 'https://api.sistemaprodutividade.com',
+    'base_url': '', # adicionar a url base do sistema de produtividade
     'endpoints': {
         'register_productivity': '/produtividade/register',
         'get_activity': '/funcionarios/{id_funcionario}/atividades'
